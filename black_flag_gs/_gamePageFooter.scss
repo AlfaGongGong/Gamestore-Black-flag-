@@ -6,33 +6,16 @@ $linkTextColor: #6593A6;
 $neonOne: rgb(86, 255, 30);
 $neonTwo: rgb(163, 255, 204);
 
-::-webkit-scrollbar {
-    width: 2px;
-    height: 2px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: $navBackgroundColor;
-}
-
-::-webkit-scrollbar-track {
-    background: $neonOne;
-}
-
 #footer {
     box-shadow: 20px 20px 40px -12px $neonOne;
     backdrop-filter: blur(7.5px);
-    border-color: $neonTwo;
-    border: solid 2px;
+    border: solid 2px $neonTwo;
     border-radius: 25px;
     margin-top: 15px;
     display: flex;
-    font-size: 24px;
-    height: 200px;
-    overflow-y: auto;
+    height: 60px;
     padding: 15px;
     font-family: bangers;
-    color: $neonTwo;
     font-size: 28px;
 }
 
@@ -52,7 +35,7 @@ $neonTwo: rgb(163, 255, 204);
 }
 
 .socIcon:hover {
-    text-decoration: none
+    text-decoration: none;
 }
 
 #signature {
@@ -108,10 +91,6 @@ $neonTwo: rgb(163, 255, 204);
     width: 200px;
 }
 
-.wrapper .button:hover .icon i {
-    color: #fff;
-}
-
 .wrapper .button:nth-child(1) span {
     color: #4267B2;
 }
@@ -133,5 +112,5 @@ $neonTwo: rgb(163, 255, 204);
 }
 
 .wrapper .button:nth-child(3):hover .icon {
-    background: #E1306C;
+    color: #E1306C;
 }

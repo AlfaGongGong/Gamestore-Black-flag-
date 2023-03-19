@@ -39,6 +39,19 @@ body {
     backdrop-filter: blur(7.5px);
 }
 
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $navBackgroundColor;
+}
+
+::-webkit-scrollbar-track {
+    background: $neonOne;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;

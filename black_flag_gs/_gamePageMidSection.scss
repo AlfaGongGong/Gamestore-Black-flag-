@@ -8,7 +8,6 @@ $neonTwo: rgb(163, 255, 204);
 
 a {
 
-    color: $mainBackgroundColor;
     text-decoration: none;
     padding: 5px 15px 5px 15px;
 }
@@ -38,6 +37,7 @@ h1 {
 
 ::-webkit-scrollbar {
     height: 2px;
+    width: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -177,7 +177,7 @@ body {
     font-family: Bangers, cursive;
     font-size: 18px;
     border: 2px solid $neonOne;
-    border-radius: 20px;
+    border-radius: 5px;
     overflow-y: scroll;
     display: flex;
     flex-wrap: wrap;
@@ -185,6 +185,7 @@ body {
     justify-content: center;
     width: 50%;
     height: 400px;
+    box-sizing: border-box;
 }
 
 .gameVideo {

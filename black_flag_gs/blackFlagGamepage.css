@@ -1,8 +1,7 @@
 #navbar {
   background: rgba(39, 56, 89, 0.2);
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
-  -webkit-backdrop-filter: blur(7.5px);
-          backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
   border: solid 2px rgb(163, 255, 204);
   color: #6593A6;
   height: 100px;
@@ -214,7 +213,6 @@ a.navbarIcon:hover {
   }
 }
 a {
-  color: #CEECF2;
   text-decoration: none;
   padding: 5px 15px 5px 15px;
 }
@@ -244,6 +242,7 @@ h1 {
 
 ::-webkit-scrollbar {
   height: 2px;
+  width: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -343,12 +342,10 @@ body {
   font-size: 28px;
   background: rgba(176, 209, 217, 0.1);
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(5.8px);
-          backdrop-filter: blur(5.8px);
+  backdrop-filter: blur(5.8px);
   border-radius: 25px;
   border: 2px solid rgb(163, 255, 204);
   color: rgb(86, 255, 30);
-  width: -moz-fit-content;
   width: fit-content;
   height: 60px;
   align-items: center;
@@ -363,7 +360,6 @@ body {
   list-style: none;
   overflow-x: scroll;
   margin-bottom: 15px;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -385,7 +381,7 @@ body {
   font-family: Bangers, cursive;
   font-size: 18px;
   border: 2px solid rgb(86, 255, 30);
-  border-radius: 20px;
+  border-radius: 5px;
   overflow-y: scroll;
   display: flex;
   flex-wrap: wrap;
@@ -393,6 +389,7 @@ body {
   justify-content: center;
   width: 50%;
   height: 400px;
+  box-sizing: border-box;
 }
 
 .gameVideo {
@@ -437,9 +434,7 @@ ul::-webkit-scrollbar div.container::-webkit-scrollbar {
 }
 
 .screenShot {
-  width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   border-radius: 5px;
   border: 2px solid rgb(163, 255, 204);
@@ -456,13 +451,11 @@ ul::-webkit-scrollbar div.container::-webkit-scrollbar {
 
 .thumbs {
   width: 50%;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
 .trailer {
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   justify-self: flex-start;
 }
@@ -524,6 +517,115 @@ ul::-webkit-scrollbar div.container::-webkit-scrollbar {
     font-size: 35px;
   }
 }
+#footer {
+  box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
+  backdrop-filter: blur(7.5px);
+  border: solid 2px rgb(163, 255, 204);
+  border-radius: 25px;
+  margin-top: 15px;
+  display: flex;
+  height: 60px;
+  padding: 15px;
+  font-family: bangers;
+  font-size: 28px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.socIcon {
+  position: relative;
+  transition: all 0.1s ease-in-out color #007bff;
+  text-decoration: none;
+  background-color: white;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.socIcon:hover {
+  text-decoration: none;
+}
+
+#signature {
+  color: rgb(86, 255, 30);
+  font-size: 10px;
+  font-family: bangers;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.wrapper .button {
+  display: inline-flex;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button .icon {
+  display: inline-flex;
+  height: 40px;
+  width: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 40px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 40px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+  width: 200px;
+}
+
+.wrapper .button:nth-child(1) span {
+  color: #4267B2;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+  background: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span {
+  color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+  background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) span {
+  color: #E1306C;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+  color: #E1306C;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -539,8 +641,7 @@ body {
   margin: 0;
   background-position: center;
   background-blend-mode: soft-light;
-  -webkit-backdrop-filter: opacity(0.7);
-          backdrop-filter: opacity(0.7);
+  backdrop-filter: opacity(0.7);
 }
 
 html {

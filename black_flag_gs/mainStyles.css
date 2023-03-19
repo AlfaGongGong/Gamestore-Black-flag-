@@ -1,8 +1,7 @@
 #navbar {
   background: rgba(39, 56, 89, 0.2);
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
-  -webkit-backdrop-filter: blur(7.5px);
-          backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
   border: solid 2px rgb(163, 255, 204);
   color: #6593A6;
   height: 100px;
@@ -243,8 +242,20 @@ body {
   font: 16px/24px "Rubik", sans-serif;
   color: #273859;
   background: rgba(39, 56, 89, 0.2);
-  -webkit-backdrop-filter: blur(7.5px);
-          backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #273859;
+}
+
+::-webkit-scrollbar-track {
+  background: #56ff1e;
 }
 
 .container {
@@ -257,8 +268,7 @@ body {
   font-size: 28px;
   background: rgba(176, 209, 217, 0.1);
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(5.8px);
-          backdrop-filter: blur(5.8px);
+  backdrop-filter: blur(5.8px);
   border-radius: 10px;
   border: 2px solid #56ff1e;
   color: #CEECF2;
@@ -299,7 +309,6 @@ body {
 
 .card-title {
   font-size: 20px;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -471,10 +480,22 @@ ul::-webkit-scrollbar div.container::-webkit-scrollbar {
     opacity: 1;
   }
 }
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #273859;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(86, 255, 30);
+}
+
 #footer {
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
-  -webkit-backdrop-filter: blur(7.5px);
-          backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
   border-color: rgb(163, 255, 204);
   border: solid 2px;
   border-radius: 25px;
@@ -601,8 +622,7 @@ body {
   padding: 0;
   background-position: center;
   background-blend-mode: soft-light;
-  -webkit-backdrop-filter: opacity(0.7);
-          backdrop-filter: opacity(0.7);
+  backdrop-filter: opacity(0.7);
 }
 
 .material-icons.md-24 {
