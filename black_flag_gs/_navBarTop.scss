@@ -51,33 +51,34 @@ button:hover {
 
 #hamb:hover {
     text-decoration: none;
-    color: $neonTwo;
+    color: $navBackgroundColor;
+    background-color: $hoverColor;
 }
 
 .navbarIcon {
     font-size: 30px;
-    color: $mainBackgroundColor;
+    color: $neonOne;
     border: solid 2px $neonTwo;
 
 }
 
-a.navbarIcon:hover {
+.navbarIcon:hover, .material-icons:hover {
 
-    background-color: $mainBackgroundColor;
-    color: $neonOne;
-    border: solid 2px $neonTwo;
+    background-color: $hoverColor;
+    color: $navBackgroundColor;
 }
 
 .navbarLink {
-    color: $hoverColor;
+    color: $neonTwo;
     text-decoration: none;
     border-radius: 25px;
-    border: solid 2px $neonTwo;
+    font-family: bangers;
 }
 
 .navbarLink:hover {
     text-decoration: none;
-    color: $neonTwo;
+    color: $navBackgroundColor;
+    background-color: $hoverColor;
     border-radius: 25px;
 }
 

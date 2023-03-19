@@ -42,31 +42,32 @@ button:hover {
 
 #hamb:hover {
   text-decoration: none;
-  color: rgb(163, 255, 204);
+  color: #273859;
+  background-color: #B0D1D9;
 }
 
 .navbarIcon {
   font-size: 30px;
-  color: #CEECF2;
-  border: solid 2px rgb(163, 255, 204);
-}
-
-a.navbarIcon:hover {
-  background-color: #CEECF2;
   color: rgb(86, 255, 30);
   border: solid 2px rgb(163, 255, 204);
 }
 
+.navbarIcon:hover, .material-icons:hover {
+  background-color: #B0D1D9;
+  color: #273859;
+}
+
 .navbarLink {
-  color: #B0D1D9;
+  color: rgb(163, 255, 204);
   text-decoration: none;
   border-radius: 25px;
-  border: solid 2px rgb(163, 255, 204);
+  font-family: bangers;
 }
 
 .navbarLink:hover {
   text-decoration: none;
-  color: rgb(163, 255, 204);
+  color: #273859;
+  background-color: #B0D1D9;
   border-radius: 25px;
 }
 

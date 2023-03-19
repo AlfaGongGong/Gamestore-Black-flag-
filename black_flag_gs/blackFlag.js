@@ -32,8 +32,8 @@
       x(f.play_type);
       da();
       setTimeout(function () {
-          !0 !== d && h()
-        },
+        !0 !== d && h()
+      },
         1E3)
     }
 
@@ -74,9 +74,9 @@
         f.captions[g] = [];
         for (var l = 0; 3 > l; l++) {
           var e = {
-              enable: V[l].enable,
-              delay: V[l].delay
-            },
+            enable: V[l].enable,
+            delay: V[l].delay
+          },
             t = d(a.get(g)).find(".ism-caption-" + l);
           1 == t.length && (e.enable = !0, t = t.data("delay"), isNaN(t) || (e.delay = parseInt(t)));
           f.captions[g][l] = e
@@ -361,17 +361,17 @@
       }, f.captions[a][b].delay)
     }
     var G = {
-        transition_type: "slide",
-        play_type: "manual",
-        interval: 7E3,
-        image_fx: "none",
-        buttons: !0,
-        radios: !0,
-        radio_type: "button",
-        pause_button: !0,
-        transition_duration: 350,
-        swipe: !0
-      },
+      transition_type: "slide",
+      play_type: "manual",
+      interval: 7E3,
+      image_fx: "none",
+      buttons: !0,
+      radios: !0,
+      radio_type: "button",
+      pause_button: !0,
+      transition_duration: 350,
+      swipe: !0
+    },
       V = [{
         enable: !1,
         delay: 0
@@ -410,7 +410,7 @@
     this.enableButtons = function (a) {
       !0 !== a || f.buttons || (X(), d("#" + b + " .ism-button").remove(), T())
     };
-    this.enableRadios = function (a) {};
+    this.enableRadios = function (a) { };
     this.setRadioType = function (a) {
       "thumbnail" == a ? d("#" + b + " .ism-radios").addClass("ism-radios-as-thumbnails") : d("#" +
         b + " .ism-radios").removeClass("ism-radios-as-thumbnails")
@@ -630,7 +630,7 @@
       activeClass: "active",
       css3: !0,
       tapping: !0,
-      afterSwipeCallback: function () {}
+      afterSwipeCallback: function () { }
     },
     init: function () {
       if (this.options.css3) {
@@ -874,7 +874,7 @@
           var c = this.groupClone(this.value.target);
           this.setTargetValueByOffset([h.x - this.offset.wrapper[0] - this.offset.mouse[0], h.y - this.offset.wrapper[1] - this.offset.mouse[1]], this.options.loose);
           this.change = [this.value.target[0] - c[0], this.value.target[1] - c[1]]
-        }(this.dragging || b) && this.groupCopy(this.value.current, this.value.target);
+        } (this.dragging || b) && this.groupCopy(this.value.current, this.value.target);
         if (this.dragging || this.glide() || b) this.updateOffsetFromValue(), this.callAnimationCallback()
       }
     },
@@ -886,7 +886,7 @@
     },
     animateSlide: function () {
       for (var a = this.value.target[0] - this.value.current[0],
-          b = 0 <= a ? 1 : -1, a = Math.abs(a), c = (this.value.current[0] - this.slide_start) / (this.value.target[0] - this.slide_start), d = c - .5, d = (-3 * d * d + .8) * this.step_size * .08; d > a;) d *= .5;
+        b = 0 <= a ? 1 : -1, a = Math.abs(a), c = (this.value.current[0] - this.slide_start) / (this.value.target[0] - this.slide_start), d = c - .5, d = (-3 * d * d + .8) * this.step_size * .08; d > a;) d *= .5;
       .995 < c ? (this.groupCopy(this.value.current, this.value.target), this.sliding = !1, this.slide_callback()) : this.value.current[0] += b * d;
       this.updateOffsetFromValue();
       this.renderHandlePosition();
@@ -966,53 +966,53 @@
     }
   };
   for (var k = function (a, b) {
-      return function () {
-        return a.apply(b, arguments)
-      }
-    }, b = function (a, b, c) {
-      a.addEventListener ? a.addEventListener(b, c, !1) : a.attachEvent && a.attachEvent("on" + b, c)
-    }, c = function (a, b, c) {
-      a.removeEventListener ? a.removeEventListener(b, c, !1) : a.detachEvent && a.detachEvent("on" + b, c)
-    }, l = function (a) {
+    return function () {
+      return a.apply(b, arguments)
+    }
+  }, b = function (a, b, c) {
+    a.addEventListener ? a.addEventListener(b, c, !1) : a.attachEvent && a.attachEvent("on" + b, c)
+  }, c = function (a, b, c) {
+    a.removeEventListener ? a.removeEventListener(b, c, !1) : a.detachEvent && a.detachEvent("on" + b, c)
+  }, l = function (a) {
+    a || (a = window.event);
+    a.preventDefault && a.preventDefault();
+    a.returnValue = !1
+  }, M = function (a) {
+    a || (a = window.event);
+    a.stopPropagation && a.stopPropagation();
+    a.cancelBubble = !0
+  }, h = {
+    x: 0,
+    y: 0,
+    xDiff: 0,
+    yDiff: 0,
+    refresh: function (a) {
       a || (a = window.event);
-      a.preventDefault && a.preventDefault();
-      a.returnValue = !1
-    }, M = function (a) {
-      a || (a = window.event);
-      a.stopPropagation && a.stopPropagation();
-      a.cancelBubble = !0
-    }, h = {
-      x: 0,
-      y: 0,
-      xDiff: 0,
-      yDiff: 0,
-      refresh: function (a) {
-        a || (a = window.event);
-        "mousemove" == a.type ? this.set(a) : a.touches && this.set(a.touches[0])
-      },
-      set: function (a) {
-        var b = this.x,
-          c = this.y;
-        if (a.clientX || a.clientY) this.x = a.clientX, this.y = a.clientY;
-        else if (a.pageX || a.pageY) this.x = a.pageX - document.body.scrollLeft - document.documentElement.scrollLeft, this.y = a.pageY - document.body.scrollTop -
-          document.documentElement.scrollTop;
-        this.xDiff = Math.abs(this.x - b);
-        this.yDiff = Math.abs(this.y - c)
-      }
-    }, w = {
-      get: function (a) {
-        var b = {
-          left: 0,
-          top: 0
-        };
-        void 0 !== a.getBoundingClientRect && (b = a.getBoundingClientRect());
-        return [b.left, b.top]
-      }
-    }, r = {
-      transform: e("transform"),
-      perspective: e("perspective"),
-      backfaceVisibility: e("backfaceVisibility")
-    }, u = ["webkit", "moz"], m = window.requestAnimationFrame, x = window.cancelAnimationFrame, v = 0; v < u.length && !m; ++v) m = window[u[v] + "RequestAnimationFrame"], x = window[u[v] + "CancelAnimationFrame"] ||
+      "mousemove" == a.type ? this.set(a) : a.touches && this.set(a.touches[0])
+    },
+    set: function (a) {
+      var b = this.x,
+        c = this.y;
+      if (a.clientX || a.clientY) this.x = a.clientX, this.y = a.clientY;
+      else if (a.pageX || a.pageY) this.x = a.pageX - document.body.scrollLeft - document.documentElement.scrollLeft, this.y = a.pageY - document.body.scrollTop -
+        document.documentElement.scrollTop;
+      this.xDiff = Math.abs(this.x - b);
+      this.yDiff = Math.abs(this.y - c)
+    }
+  }, w = {
+    get: function (a) {
+      var b = {
+        left: 0,
+        top: 0
+      };
+      void 0 !== a.getBoundingClientRect && (b = a.getBoundingClientRect());
+      return [b.left, b.top]
+    }
+  }, r = {
+    transform: e("transform"),
+    perspective: e("perspective"),
+    backfaceVisibility: e("backfaceVisibility")
+  }, u = ["webkit", "moz"], m = window.requestAnimationFrame, x = window.cancelAnimationFrame, v = 0; v < u.length && !m; ++v) m = window[u[v] + "RequestAnimationFrame"], x = window[u[v] + "CancelAnimationFrame"] ||
     window[u[v] + "CancelRequestAnimationFrame"];
   m || (m = function (a) {
     return setTimeout(a, 25)
@@ -1050,9 +1050,10 @@ $('#fB').mouseenter(function () {
 $('#fB').mouseleave(function () {
   $("#socialF").remove();
 });
+// button for cattegories homepage
+
 $('button.btn').each(function () {
   let originalText = $(this).text();
-  // button for cattegories homepage
   $(this).mouseenter(function () {
     $(this).text('Click for details');
   }).mouseleave(function () {
@@ -1081,4 +1082,12 @@ function viewClick() {
     $('#enlargedView').empty().append(enlargedDiv);
   });
 };
-//
+// buy game/add to cart button
+$('button.btnBuy').each(function () {
+  let originalText = $(this).text();
+  $(this).mouseenter(function () {
+    $(this).text('Add to shopping bag');
+  }).mouseleave(function () {
+    $(this).text(originalText);
+  });
+});
