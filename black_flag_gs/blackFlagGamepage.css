@@ -1,3 +1,26 @@
+button {
+  padding: 5px;
+  margin: 10px;
+  background-color: #273859;
+  font-size: 15px;
+  border: 2px solid rgb(163, 255, 204);
+  border-radius: 10px;
+  color: rgb(163, 255, 204);
+  font-family: bangers;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #B0D1D9;
+  color: #273859;
+}
+
+.searchInput {
+  font-family: bangers;
+  border-radius: 25px;
+  color: rgb(163, 255, 204);
+}
+
 #navbar {
   background: rgba(39, 56, 89, 0.2);
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
@@ -32,13 +55,6 @@ a.navbarIcon:hover {
   background-color: #CEECF2;
   color: rgb(86, 255, 30);
   border: solid 2px rgb(163, 255, 204);
-}
-
-#searchBar {
-  border-radius: 50px;
-  border-style: solid;
-  border-color: #6593A6;
-  font-size: 20px;
 }
 
 .navbarLink {
@@ -522,7 +538,7 @@ ul::-webkit-scrollbar div.container::-webkit-scrollbar {
   backdrop-filter: blur(7.5px);
   border: solid 2px rgb(163, 255, 204);
   border-radius: 25px;
-  margin-top: 15px;
+  margin: 15px;
   display: flex;
   height: 60px;
   padding: 15px;
@@ -555,7 +571,8 @@ ul::-webkit-scrollbar div.container::-webkit-scrollbar {
   font-family: bangers;
   margin: 10px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .wrapper .button {

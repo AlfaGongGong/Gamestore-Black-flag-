@@ -6,6 +6,29 @@ $linkTextColor: #6593A6;
 $neonOne: rgb(86, 255, 30);
 $neonTwo: rgb(163, 255, 204);
 
+button {
+    padding: 5px;
+    margin: 10px;
+    background-color: $navBackgroundColor;
+    font-size: 15px;
+    border: 2px solid $neonTwo;
+    border-radius: 10px;
+    color: $neonTwo;
+    font-family: bangers;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $hoverColor;
+    color: $navBackgroundColor;
+}
+
+.searchInput {
+    font-family: bangers;
+    border-radius: 25px;
+    color: $neonTwo;
+}
+
 #navbar {
     background: rgba(39, 56, 89, 0.2);
     box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
@@ -21,9 +44,11 @@ $neonTwo: rgb(163, 255, 204);
     justify-content: space-evenly;
     font-size: 24px;
 }
+
 #hamb {
-    color:$neonOne;
+    color: $neonOne;
 }
+
 #hamb:hover {
     text-decoration: none;
     color: $neonTwo;
@@ -41,13 +66,6 @@ a.navbarIcon:hover {
     background-color: $mainBackgroundColor;
     color: $neonOne;
     border: solid 2px $neonTwo;
-}
-
-#searchBar {
-    border-radius: 50px;
-    border-style: solid;
-    border-color: $logoFontColor;
-    font-size: 20px;
 }
 
 .navbarLink {
@@ -69,16 +87,19 @@ a.navbarIcon:hover {
     animation: text-flicker-in-glow 6s linear 5s both;
     color: $neonOne;
 }
+
 @media (max-width:570px) {
-   #storeName {
-    font-size: 30px;
-   }
-}
-@media (max-width:490px) {
     #storeName {
-     font-size: 20px;
+        font-size: 30px;
     }
 }
+
+@media (max-width:490px) {
+    #storeName {
+        font-size: 20px;
+    }
+}
+
 @keyframes text-flicker-in-glow {
     0% {
         opacity: 0;
