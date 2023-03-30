@@ -18,7 +18,8 @@ button:hover {
 .searchInput {
   font-family: bangers;
   border-radius: 25px;
-  color: rgb(163, 255, 204);
+  color: #273859;
+  padding: 0 5 0 5;
 }
 
 #navbar {
