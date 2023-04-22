@@ -58,7 +58,8 @@ a:hover {
   box-sizing: border-box;
   background: #CEECF2;
   box-shadow: 20px 20px 40px -12px #273859;
-  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
 }
 
 .input-field {
@@ -88,7 +89,8 @@ input[type=password] {
 .imgLogin {
   width: 40px;
   height: 40px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   position: relative;
 }
@@ -108,7 +110,8 @@ a[target=_blank] {
   left: 33%;
   background: #CEECF2;
   box-shadow: 20px 20px 40px -12px #273859;
-  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
   opacity: 0.7;
 }
 
