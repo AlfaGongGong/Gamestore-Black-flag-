@@ -35,33 +35,35 @@ body {
 
 .container {
     max-width: 1400px;
-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0 auto;
 }
-.container:hover{
-    height:fit-content;
+
+.container:hover {
+    height: fit-content;
 }
+
 ul.cards::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  ul.cards::-webkit-scrollbar-thumb {
+}
+
+ul.cards::-webkit-scrollbar-thumb {
     background: $navBackgroundColor;
-  }
-  
-  ul.cards::-webkit-scrollbar-track {
+}
+
+ul.cards::-webkit-scrollbar-track {
     background: $neonOne;
-  }
-  
-  .cards {
+}
+
+.cards {
     display: flex;
     list-style: none;
     overflow-x: scroll;
     overflow-y: hidden;
     margin-bottom: 15px;
-    padding-right: calc(10px + 1em); 
-  }
-  
+    padding-bottom: calc(10px + 1em);
+}
+
 .cardTitle {
     display: flex;
     font-size: 28px;

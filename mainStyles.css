@@ -343,7 +343,7 @@ ul.cards::-webkit-scrollbar-track {
   overflow-x: scroll;
   overflow-y: hidden;
   margin-bottom: 15px;
-  padding-right: calc(10px + 1em);
+  padding-bottom: calc(10px + 1em);
 }
 
 .cardTitle {
