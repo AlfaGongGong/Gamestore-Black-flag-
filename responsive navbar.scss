@@ -11,16 +11,15 @@ $neonTwo: rgb(163, 255, 204);
     box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
     backdrop-filter: blur(7.5px);
     border: solid 2px $neonTwo;
-
+    height: 110px;
     color: $linkTextColor;
-    height: 100px;
     border-radius: 25px;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
     font-size: 24px;
+    padding: 5px;
 }
 
 #storeName {
@@ -206,9 +205,10 @@ $neonTwo: rgb(163, 255, 204);
         opacity: 1;
     }
 }
+
 #hamb {
-    color: $neonOne ;
-    border-color:$neonOne;
+    color: $neonOne;
+    border-color: $neonOne;
     width: 20px;
     height: 20px;
 }
@@ -218,27 +218,31 @@ $neonTwo: rgb(163, 255, 204);
     color: $mainBackgroundColor;
     background-color: $navBackgroundColor;
 }
+
 a {
     color: #CEECF2;
     text-decoration: none;
     padding: 5px 0px 5px 15px;
     margin: auto;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: none;
     color: rgb(163, 255, 204);
-  }
-  .container {
+}
+
+.container {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .navbar-toggler-icon {
     color: $neonOne;
 }
+
 .navbarLink {
     color: $neonTwo;
     text-decoration: none;
@@ -252,16 +256,11 @@ a {
     background-color: $navBackgroundColor;
     border-radius: 25px;
 }
+
 .navbarIcon {
     font-size: 15px;
     color: $neonOne;
 
-}
-
-.navbarIcon:hover, .material-icons:hover {
-
-    background-color: $navBackgroundColor;
-    color: $neonOne;
 }
 
 #navbarWrap {
@@ -269,4 +268,44 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#navbarCollapse {
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.navbarIcon:hover {
+    color: $hoverColor;
+}
+
+.nav-item:hover {
+    background-color: $navBackgroundColor;
+    border-radius: 25px;
+    color: $hoverColor;
+    text-decoration: none;
+}
+
+.navbar-toggler-icon {
+    color: $neonOne;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-size: 0px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    text-decoration: none;
+    border: $hoverColor solid 1px;
+    color: $hoverColor;
+    background-color: $navBackgroundColor;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon:hover,
+.navbar-toggler-icon:focus {
+    color: $hoverColor;
 }

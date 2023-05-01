@@ -1055,7 +1055,7 @@ $('#fB').mouseleave(function () {
 $('button.btn').each(function () {
   let originalText = $(this).text();
   $(this).mouseenter(function () {
-    $(this).text('Click for details');
+    $(this).text('Add to shopping bag');
   }).mouseleave(function () {
     $(this).text(originalText);
   });

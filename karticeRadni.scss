@@ -1,0 +1,174 @@
+$navBackgroundColor: #273859;
+$hoverColor: #B0D1D9;
+$mainBackgroundColor: #CEECF2;
+$logoFontColor: #6593a6;
+$linkTextColor: #6593A6;
+$neonOne: #56ff1e;
+$neonTwo: rgb(163, 255, 204);
+
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font: 16px / 24px "Rubik", sans-serif;
+  color: $navBackgroundColor;
+  background: rgba(39, 56, 89, 0.2);
+  backdrop-filter: blur(7.5px);
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $navBackgroundColor;
+}
+
+::-webkit-scrollbar-track {
+  background: $neonOne;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.cardWrap {
+  scroll-padding-top: 15px;
+  scroll-snap-align: start;
+  transition: all 0.2s;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+
+}
+.cardTitle {
+  display: flex;
+  font-size: 28px;
+  background: rgba(176, 209, 217, 0.1);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5.8px);
+  border-radius: 10px;
+  border: 2px solid $neonOne;
+  color: $mainBackgroundColor;
+  border-radius: 25px;
+  width: 50%;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  font-family: Bangers, cursive;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-content {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 270px;
+  margin: 20px;
+  scroll-padding-top: 15px;
+  scroll-snap-align: start;
+  transition: all 0.2s;
+
+}
+.btn {
+  display: inline-flex;
+  text-decoration: none;
+  color: whitesmoke;
+  background: $navBackgroundColor;
+  border-radius: 8px;
+  transition: background 0.2s;
+  height: 50px;
+  width: 80%;
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border: $neonOne;
+  border: 2px solid;
+  font-family: Bangers;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: $navBackgroundColor;
+  background: $mainBackgroundColor;
+  transition: background 0.2s;
+  border: 2px solid $neonTwo;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $navBackgroundColor;
+}
+
+::-webkit-scrollbar-track {
+  background: $neonOne;
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.item {
+  flex: 1 1 0px;
+  transition: transform 500ms;
+}
+
+.container:focus-within .item,
+.container:hover .item {
+  transform: translateX(-25%);
+}
+
+.item:focus~.item,
+.item:hover~.item {
+  transform: translateX(25%);
+}
+
+.container .item:focus,
+.container .item:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+body {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+
+.item,
+img {
+  width: inherit;
+  height: inherit;
+}
+
+p {
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+img {
+  overflow-clip-margin:hidden ;
+  overflow:hidden ;
+}

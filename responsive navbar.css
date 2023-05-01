@@ -4,15 +4,15 @@
   -webkit-backdrop-filter: blur(7.5px);
           backdrop-filter: blur(7.5px);
   border: solid 2px rgb(163, 255, 204);
+  height: 110px;
   color: #6593A6;
-  height: 100px;
   border-radius: 25px;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  flex-wrap: nowrap;
   font-size: 24px;
+  padding: 5px;
 }
 
 #storeName {
@@ -223,14 +223,49 @@ a:hover {
   color: rgb(86, 255, 30);
 }
 
-.navbarIcon:hover, .material-icons:hover {
-  background-color: #273859;
-  color: rgb(86, 255, 30);
-}
-
 #navbarWrap {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+#navbarCollapse {
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+.navbarIcon:hover {
+  color: #B0D1D9;
+}
+
+.nav-item:hover {
+  background-color: #273859;
+  border-radius: 25px;
+  color: #B0D1D9;
+  text-decoration: none;
+}
+
+.navbar-toggler-icon {
+  color: rgb(86, 255, 30);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-size: 0px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  text-decoration: none;
+  border: #B0D1D9 solid 1px;
+  color: #B0D1D9;
+  background-color: #273859;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon:hover,
+.navbar-toggler-icon:focus {
+  color: #B0D1D9;
 }/*# sourceMappingURL=responsive navbar.css.map */

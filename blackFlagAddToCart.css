@@ -1,95 +1,40 @@
-button {
-  padding: 5px;
-  margin: 10px;
-  background-color: #273859;
-  font-size: 15px;
-  border: 2px solid rgb(163, 255, 204);
-  border-radius: 10px;
-  color: rgb(163, 255, 204);
-  font-family: bangers;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #B0D1D9;
-  color: #273859;
-}
-
-.searchInput {
-  font-family: bangers;
-  border-radius: 25px;
-  color: #273859;
-  padding: 0 5 0 5;
-}
-
 #navbar {
   background: rgba(39, 56, 89, 0.2);
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
   -webkit-backdrop-filter: blur(7.5px);
           backdrop-filter: blur(7.5px);
   border: solid 2px rgb(163, 255, 204);
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
   color: #6593A6;
-  height: 100px;
   border-radius: 25px;
   margin-top: 15px;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: nowrap;
   font-size: 24px;
+  padding: 5px;
+  align-items: center;
 }
 
-#hamb {
-  color: rgb(86, 255, 30);
-}
-
-#hamb:hover {
-  text-decoration: none;
-  color: #273859;
-  background-color: #B0D1D9;
-}
-
-.navbarIcon {
-  font-size: 30px;
-  color: rgb(86, 255, 30);
-  border: solid 2px rgb(163, 255, 204);
-}
-
-.navbarIcon:hover, .material-icons:hover {
-  background-color: #B0D1D9;
-  color: #273859;
-}
-
-.navbarLink {
-  color: rgb(163, 255, 204);
-  text-decoration: none;
-  border-radius: 25px;
-  font-family: bangers;
-}
-
-.navbarLink:hover {
-  text-decoration: none;
-  color: #273859;
-  background-color: #B0D1D9;
-  border-radius: 25px;
+.navbar-nav, .ml-auto {
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 #storeName {
-  font-size: 25px;
+  font-size: 18px;
   font-family: "Rampart One", cursive;
   animation: text-flicker-in-glow 6s linear 5s both;
   color: rgb(86, 255, 30);
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline;
 }
 
-@media (max-width: 570px) {
-  #storeName {
-    font-size: 30px;
-  }
-}
-@media (max-width: 490px) {
-  #storeName {
-    font-size: 20px;
-  }
-}
 @keyframes text-flicker-in-glow {
   0% {
     opacity: 0;
@@ -216,7 +161,8 @@ button:hover {
   }
 }
 #logo {
-  margin-left: 30px;
+  display: inline-flex;
+  margin: auto;
   animation: roll-in-left 5s ease-out both;
   color: rgb(86, 255, 30);
 }
@@ -231,6 +177,115 @@ button:hover {
     opacity: 1;
   }
 }
+#hamb {
+  color: rgb(86, 255, 30);
+  border-color: rgb(86, 255, 30);
+  width: 20px;
+  height: 20px;
+}
+
+#hamb:hover {
+  text-decoration: none;
+  color: #CEECF2;
+  background-color: #273859;
+}
+
+a {
+  color: #CEECF2;
+  text-decoration: none;
+  padding: 5px 0px 5px 15px;
+  margin: auto;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(163, 255, 204);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar-toggler-icon {
+  color: rgb(86, 255, 30);
+}
+
+.navbarLink {
+  color: rgb(163, 255, 204);
+  text-decoration: none;
+  border-radius: 25px;
+  font-family: bangers;
+}
+
+.navbarLink:hover {
+  text-decoration: none;
+  color: #273859;
+  background-color: #273859;
+  border-radius: 25px;
+}
+
+.navbarIcon {
+  font-size: 15px;
+  color: rgb(86, 255, 30);
+}
+
+#navbarWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#navbarCollapse {
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+.navbarIcon:hover {
+  color: #B0D1D9;
+}
+
+.nav-item:hover {
+  background-color: #273859;
+  border-radius: 25px;
+  color: #B0D1D9;
+  text-decoration: none;
+}
+
+.navbar-toggler-icon {
+  color: rgb(86, 255, 30);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-size: 0px;
+}
+
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  text-decoration: none;
+  border: #B0D1D9 solid 1px;
+  color: #B0D1D9;
+  background-color: #273859;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon:hover,
+.navbar-toggler-icon:focus {
+  color: #B0D1D9;
+}
+
 #footer {
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
   -webkit-backdrop-filter: blur(7.5px);

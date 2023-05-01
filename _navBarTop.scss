@@ -6,100 +6,34 @@ $linkTextColor: #6593A6;
 $neonOne: rgb(86, 255, 30);
 $neonTwo: rgb(163, 255, 204);
 
-button {
-    padding: 5px;
-    margin: 10px;
-    background-color: $navBackgroundColor;
-    font-size: 15px;
-    border: 2px solid $neonTwo;
-    border-radius: 10px;
-    color: $neonTwo;
-    font-family: bangers;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: $hoverColor;
-    color: $navBackgroundColor;
-}
-
-.searchInput {
-    font-family: bangers;
-    border-radius: 25px;
-    color: $navBackgroundColor;
-    padding:0 5 0 5;
-}
-
 #navbar {
     background: rgba(39, 56, 89, 0.2);
     box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
     backdrop-filter: blur(7.5px);
     border: solid 2px $neonTwo;
-
+    height: max-content;
+    width: 100%;
     color: $linkTextColor;
-    height: 100px;
     border-radius: 25px;
     margin-top: 15px;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
     font-size: 24px;
+    padding: 5px;
+    align-items: center;
 }
-
-#hamb {
-    color: $neonOne;
+.navbar-nav, .ml-auto {
+    height:max-content;
+    width:max-content;
 }
-
-#hamb:hover {
-    text-decoration: none;
-    color: $navBackgroundColor;
-    background-color: $hoverColor;
-}
-
-.navbarIcon {
-    font-size: 30px;
-    color: $neonOne;
-    border: solid 2px $neonTwo;
-
-}
-
-.navbarIcon:hover, .material-icons:hover {
-
-    background-color: $hoverColor;
-    color: $navBackgroundColor;
-}
-
-.navbarLink {
-    color: $neonTwo;
-    text-decoration: none;
-    border-radius: 25px;
-    font-family: bangers;
-}
-
-.navbarLink:hover {
-    text-decoration: none;
-    color: $navBackgroundColor;
-    background-color: $hoverColor;
-    border-radius: 25px;
-}
-
 #storeName {
-    font-size: 25px;
+    font-size: 18px;
     font-family: 'Rampart One', cursive;
     animation: text-flicker-in-glow 6s linear 5s both;
     color: $neonOne;
-}
-
-@media (max-width:570px) {
-    #storeName {
-        font-size: 30px;
-    }
-}
-
-@media (max-width:490px) {
-    #storeName {
-        font-size: 20px;
-    }
+    width: fit-content;
+    display: inline;
 }
 
 @keyframes text-flicker-in-glow {
@@ -259,7 +193,8 @@ button:hover {
 }
 
 #logo {
-    margin-left: 30px;
+    display: inline-flex;
+    margin: auto;
     animation: roll-in-left 5s ease-out both;
     color: $neonOne;
 }
@@ -274,4 +209,112 @@ button:hover {
         transform: translateX(0) rotate(0deg);
         opacity: 1;
     }
+}
+
+#hamb {
+    color: $neonOne;
+    border-color: $neonOne;
+    width: 20px;
+    height: 20px;
+}
+
+#hamb:hover {
+    text-decoration: none;
+    color: $mainBackgroundColor;
+    background-color: $navBackgroundColor;
+}
+
+a {
+    color: #CEECF2;
+    text-decoration: none;
+    padding: 5px 0px 5px 15px;
+    margin: auto;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(163, 255, 204);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-toggler-icon {
+    color: $neonOne;
+}
+
+.navbarLink {
+    color: $neonTwo;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: bangers;
+}
+
+.navbarLink:hover {
+    text-decoration: none;
+    color: $navBackgroundColor;
+    background-color: $navBackgroundColor;
+    border-radius: 25px;
+}
+
+.navbarIcon {
+    font-size: 15px;
+    color: $neonOne;
+
+}
+
+#navbarWrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#navbarCollapse {
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.navbarIcon:hover {
+    color: $hoverColor;
+}
+
+.nav-item:hover {
+    background-color: $navBackgroundColor;
+    border-radius: 25px;
+    color: $hoverColor;
+    text-decoration: none;
+}
+
+.navbar-toggler-icon {
+    color: $neonOne;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-size: 0px;
+}
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    text-decoration: none;
+    border: $hoverColor solid 1px;
+    color: $hoverColor;
+    background-color: $navBackgroundColor;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon:hover,
+.navbar-toggler-icon:focus {
+    color: $hoverColor;
 }

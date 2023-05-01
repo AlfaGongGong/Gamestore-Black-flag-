@@ -3,6 +3,8 @@ $hoverColor: #B0D1D9;
 $mainBackgroundColor: #CEECF2;
 $logoFontColor: #6593A6;
 $linkTextColor: #6593A6;
+@import "_navBarTop.scss";
+@import "_footerRadni.scss";
 
 * {
     padding: 0;
@@ -19,17 +21,18 @@ html {
 }
 
 body {
-    display: flex;
-    height: 100%;
+    background: rgb(39, 56, 89);
+    background: linear-gradient(162deg, rgba(39, 56, 89, 0.9149250276282388) 15%, rgba(101, 147, 166, 0.8729082209055498) 45%, rgba(176, 209, 217, 0.8392947755273985) 65%, rgba(206, 236, 242, 1) 80%);
+    background-image: url(rog-republic-of-gamers-logo-cyberpunk-uhdpaper.com-4K-3.3180.jpg);
+    background-size: cover;
+    background-repeat: round;
     width: 100%;
-    place-items: center;
-    background: linear-gradient(90deg, #171C26 1%, #B0D1D9 100%);
-
-}
-
-.container {
-    margin: 50px auto;
-    height: 100%
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-blend-mode: soft-light;
+    backdrop-filter: opacity(0.7);
 }
 
 .panel-heading {
@@ -119,24 +122,6 @@ a[target='_blank'] {
     opacity: 0.7;
 }
 
-@media(max-width: 360px) {
-    #forgot {
-        margin-left: 0;
-    }
-
-    body {
-        height: 100%
-    }
-
-    .container {
-        margin: 30px 0
-    }
-
-    .bordert:after {
-        left: 25%
-    }
-}
-
 .wrapper .button {
     display: inline-block;
     height: 40px;
@@ -215,4 +200,26 @@ a[target='_blank'] {
 
 .wrapper .button:nth-child(3) span {
     color: #E1306C;
+}
+
+#loginForma {
+    box-shadow: 20px 20px 40px -12px $neonOne;
+    backdrop-filter: blur(7.5px);
+
+    border-radius: 25px;
+    margin-top: 15px;
+    font-size: 24px;
+    height: 100%;
+    font-family: bangers;
+    color: $neonTwo;
+    font-size: 28px;
+}
+
+ .panel {
+    background: none;
+    box-shadow: 20px 20px 40px -12px $neonOne;
+    backdrop-filter: blur(7.5px);
+    border-color: $neonTwo;
+    border: solid 2px;
+
 }

@@ -3,7 +3,7 @@ $hoverColor: #B0D1D9;
 $mainBackgroundColor: #CEECF2;
 $logoFontColor: #6593A6;
 $linkTextColor: #6593A6;
-$neonOne: rgb(86, 255, 30);
+$neonOne: #56ff1e;
 $neonTwo: rgb(163, 255, 204);
 
 ::-webkit-scrollbar {
@@ -46,7 +46,6 @@ $neonTwo: rgb(163, 255, 204);
     transition: all 0.1s ease-in-out color #007bff;
     text-decoration: none;
     background-color: white;
-    display: flex;
     margin: 0;
     padding: 0;
 }
