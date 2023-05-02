@@ -5,37 +5,42 @@ $logoFontColor: #6593A6;
 $linkTextColor: #6593A6;
 $neonOne: rgb(86, 255, 30);
 $neonTwo: rgb(163, 255, 204);
+html,
+     body {
+    width: 100%;
+    height:100%
+}
 
 #navbar {
     background: rgba(39, 56, 89, 0.2);
     box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
     backdrop-filter: blur(7.5px);
-    border: solid 2px $neonTwo;
-    height: max-content;
-    width: 100%;
-    color: $linkTextColor;
+    border: solid 2px rgb(163, 255, 204);
+    color: #6593A6;
     border-radius: 25px;
-    margin-top: 15px;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    font-size: 24px;
-    padding: 5px;
     align-items: center;
+    justify-content: center;
+    width: 70%;
 }
-.navbar-nav, .ml-auto {
-    height:max-content;
-    width:max-content;
-}
+
 #storeName {
-    font-size: 18px;
+    font-size: 1.5rem; 
     font-family: 'Rampart One', cursive;
     animation: text-flicker-in-glow 6s linear 5s both;
     color: $neonOne;
-    width: fit-content;
-    display: inline;
 }
 
+@media screen and (min-width: 768px) {
+    #store-name {
+      font-size: 2rem; 
+      max-width: 50%; 
+      white-space: nowrap; 
+      overflow: hidden; 
+      text-overflow: ellipsis; 
+    }
+  }
 @keyframes text-flicker-in-glow {
     0% {
         opacity: 0;
@@ -227,21 +232,11 @@ $neonTwo: rgb(163, 255, 204);
 a {
     color: #CEECF2;
     text-decoration: none;
-    padding: 5px 0px 5px 15px;
-    margin: auto;
 }
 
 a:hover {
     text-decoration: none;
     color: rgb(163, 255, 204);
-}
-
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .navbar-toggler-icon {
@@ -300,11 +295,13 @@ a:hover {
     vertical-align: middle;
     background-size: 0px;
 }
+
 .navbar-toggler {
     width: 20px;
     height: 20px;
     padding: 0;
 }
+
 .navbar-toggler:focus,
 .navbar-toggler:hover {
     text-decoration: none;

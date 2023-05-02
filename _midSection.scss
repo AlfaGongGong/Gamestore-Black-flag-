@@ -12,7 +12,9 @@ a {
     padding: 5px 0px 5px 15px;
 }
 
-a:hover {
+a:hover,
+a:active,
+a:checked {
     text-decoration: none;
     color: $neonTwo;
 }
@@ -43,15 +45,18 @@ body {
     height: fit-content;
 }
 
-ul.cards::-webkit-scrollbar {
+ul.cards::-webkit-scrollbar,
+ul.cards::-moz-scrollbar {
     width: 10px;
 }
 
-ul.cards::-webkit-scrollbar-thumb {
+ul.cards::-webkit-scrollbar-thumb,
+ul.cards::-moz-scrollbar-thumb {
     background: $navBackgroundColor;
 }
 
-ul.cards::-webkit-scrollbar-track {
+ul.cards::-webkit-scrollbar-track,
+ul.cards::-moz-scrollbar-track {
     background: $neonOne;
 }
 
@@ -160,7 +165,7 @@ ul.cards::-webkit-scrollbar-track {
     animation: slide-in-fwd-center 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
 
-#bannerOne {
+#bannerUbi {
     border-radius: 15px;
     box-sizing: border-box;
 

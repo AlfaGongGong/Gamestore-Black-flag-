@@ -46,7 +46,7 @@
 
 #logoText {
   font-family: "Pacifico";
-  font-size: 20px;
+  font-size: 30px;
   color: #6593A6;
   animation: tracking-in-expand-fwd 5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   text-align: center;
@@ -56,15 +56,27 @@
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  #storeName {
+    font-size: 30px;
+    max-width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 @keyframes tracking-in-expand-fwd {
   0% {
     letter-spacing: -0.5em;
     transform: translateZ(-700px);
     opacity: 0;
   }
+
   40% {
     opacity: 0.6;
   }
+
   100% {
     transform: translateZ(0);
     opacity: 1;
