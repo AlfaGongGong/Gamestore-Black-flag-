@@ -20,15 +20,15 @@ body {
 }
 
 #storeName {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-family: "Rampart One", cursive;
   animation: text-flicker-in-glow 6s linear 5s both;
   color: rgb(86, 255, 30);
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   #store-name {
-    font-size: 2rem;
+    font-size: 40px;
     max-width: 50%;
     white-space: nowrap;
     overflow: hidden;
