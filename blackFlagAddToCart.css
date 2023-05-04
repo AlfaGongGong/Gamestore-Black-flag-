@@ -29,7 +29,7 @@ body {
 @media only screen and (min-width: 768px) {
   #store-name {
     font-size: 40px;
-    max-width: 50%;
+    max-width: 70%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
