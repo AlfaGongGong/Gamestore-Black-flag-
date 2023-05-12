@@ -7,8 +7,7 @@ body {
 #navbar {
   background: rgba(39, 56, 89, 0.2);
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
-  -webkit-backdrop-filter: blur(7.5px);
-          backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
   border: solid 2px rgb(163, 255, 204);
   color: #6593A6;
   border-radius: 25px;
@@ -406,12 +405,10 @@ body {
   font-size: 28px;
   background: rgba(176, 209, 217, 0.1);
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(5.8px);
-          backdrop-filter: blur(5.8px);
+  backdrop-filter: blur(5.8px);
   border-radius: 25px;
   border: 2px solid rgb(163, 255, 204);
   color: rgb(86, 255, 30);
-  width: -moz-fit-content;
   width: fit-content;
   height: 60px;
   align-items: center;
@@ -426,7 +423,6 @@ body {
   list-style: none;
   overflow-x: scroll;
   margin-bottom: 15px;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -501,9 +497,7 @@ ul::-webkit-scrollbar div.container::-webkit-scrollbar {
 }
 
 .screenShot {
-  width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   border-radius: 5px;
   border: 2px solid rgb(163, 255, 204);
@@ -520,13 +514,11 @@ ul::-webkit-scrollbar div.container::-webkit-scrollbar {
 
 .thumbs {
   width: 50%;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
 .trailer {
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   justify-self: flex-start;
 }
@@ -590,8 +582,7 @@ ul::-webkit-scrollbar div.container::-webkit-scrollbar {
 }
 #footer {
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
-  -webkit-backdrop-filter: blur(7.5px);
-          backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
   border: solid 2px rgb(163, 255, 204);
   border-radius: 25px;
   display: flex;
@@ -713,8 +704,7 @@ body {
   margin: 0;
   background-position: center;
   background-blend-mode: soft-light;
-  -webkit-backdrop-filter: opacity(0.7);
-          backdrop-filter: opacity(0.7);
+  backdrop-filter: opacity(0.7);
 }
 
 html {
