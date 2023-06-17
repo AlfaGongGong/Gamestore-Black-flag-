@@ -1,7 +1,8 @@
 #navbar {
   background: rgba(39, 56, 89, 0.2);
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
-  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
   border: solid 2px rgb(163, 255, 204);
   height: 110px;
   color: #6593A6;
@@ -19,6 +20,7 @@
   font-family: "Rampart One", cursive;
   animation: text-flicker-in-glow 6s linear 5s both;
   color: rgb(86, 255, 30);
+  width: -moz-fit-content;
   width: fit-content;
   display: inline;
 }

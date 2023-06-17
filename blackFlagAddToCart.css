@@ -7,7 +7,8 @@ body {
 #navbar {
   background: rgba(39, 56, 89, 0.2);
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
-  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
   border: solid 2px rgb(163, 255, 204);
   color: #6593A6;
   border-radius: 25px;
@@ -277,7 +278,8 @@ a:hover {
 
 #footer {
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
-  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
   border: solid 2px rgb(163, 255, 204);
   border-radius: 25px;
   display: flex;
@@ -406,7 +408,8 @@ body {
   margin: 0;
   background-position: center;
   background-blend-mode: soft-light;
-  backdrop-filter: opacity(0.7);
+  -webkit-backdrop-filter: opacity(0.7);
+          backdrop-filter: opacity(0.7);
 }
 
 html {
@@ -459,7 +462,8 @@ html {
   border: 2px solid rgb(163, 255, 204);
   background: rgba(39, 56, 89, 0.2);
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
-  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
   padding: 20px;
   font-family: bangers;
 }
@@ -529,6 +533,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -626,7 +631,8 @@ a:hover {
   left: 0px;
   background: rgba(39, 56, 89, 0.2);
   box-shadow: 20px 20px 40px -12px rgb(86, 255, 30);
-  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
   padding: 20px;
 }
 
