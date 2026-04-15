@@ -13,7 +13,7 @@
   --c-border-hi:  rgba(86, 255, 30, 0.35);
   --c-accent:     #56ff1e;
   --c-accent-dim: rgba(86, 255, 30, 0.12);
-  --c-glow:       0 0 22px rgba(86, 255, 30, 0.45);
+  --shadow-glow:       0 0 22px rgba(86, 255, 30, 0.45);
   --c-red:        #ef4444;
   --c-text:       #e8eef6;
   --c-text-2:     #8b9ab4;
@@ -317,7 +317,7 @@ li.card.w3-container {
 li.card:hover {
   transform: translateY(-5px) !important;
   border-color: var(--c-border-hi) !important;
-  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.55), var(--c-glow) !important;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.55), var(--shadow-glow) !important;
 }
 
 .card-content {
@@ -364,7 +364,7 @@ a.btn {
 button.btn:hover {
   background: var(--c-accent) !important;
   color: #080d18 !important;
-  box-shadow: var(--c-glow) !important;
+  box-shadow: var(--shadow-glow) !important;
 }
 
 /* Genre label buttons */
@@ -389,7 +389,7 @@ button.btn:hover {
   text-align: center;
   transition: background var(--t), box-shadow var(--t);
 }
-.text-pop-up-tr:hover { background: var(--c-accent-dim); box-shadow: var(--c-glow); }
+.text-pop-up-tr:hover { background: var(--c-accent-dim); box-shadow: var(--shadow-glow); }
 
 /* ─── 8. BANNERS ─── */
 #banner,
@@ -405,7 +405,7 @@ button.btn:hover {
 #banner:hover,
 #bannerTwo:hover {
   border-color: var(--c-border-hi) !important;
-  box-shadow: var(--c-glow) !important;
+  box-shadow: var(--shadow-glow) !important;
 }
 #bannerUbi,
 #bannerOne {
@@ -495,7 +495,7 @@ section.footer-social-section {
   border-color: var(--c-border-hi) !important;
   color: var(--c-accent) !important;
   background: var(--c-accent-dim) !important;
-  box-shadow: var(--c-glow) !important;
+  box-shadow: var(--shadow-glow) !important;
 }
 
 section.footer-bottom-section {
@@ -551,7 +551,7 @@ a.card-link.container-fluid button.btnBuy {
   transition: background var(--t), transform var(--t), box-shadow var(--t) !important;
   text-align: center !important;
   margin-bottom: var(--gap-lg) !important;
-  box-shadow: var(--c-glow) !important;
+  box-shadow: var(--shadow-glow) !important;
 }
 .btnBuy:hover,
 button.btnBuy:hover {
@@ -598,7 +598,7 @@ video {
 }
 .screenShot:hover {
   border-color: var(--c-border-hi) !important;
-  box-shadow: var(--c-glow) !important;
+  box-shadow: var(--shadow-glow) !important;
 }
 
 #enlargedView {
@@ -706,7 +706,7 @@ div.btn.btn-primary.btn-block {
 .btn.btn-primary.btn-block:hover,
 div.btn.btn-primary.btn-block:hover {
   background: #7bff4a !important;
-  box-shadow: var(--c-glow) !important;
+  box-shadow: var(--shadow-glow) !important;
 }
 
 .form-inline {
@@ -824,7 +824,7 @@ button.btn-purchase,
   letter-spacing: 1px !important;
   text-transform: uppercase;
 }
-button.btn-purchase:hover { background: #7bff4a !important; box-shadow: var(--c-glow) !important; }
+button.btn-purchase:hover { background: #7bff4a !important; box-shadow: var(--shadow-glow) !important; }
 button.btn-purchase:disabled {
   background: var(--c-card) !important;
   color: var(--c-muted) !important;
