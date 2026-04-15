@@ -1,4 +1,14 @@
 
+// hamburger menu toggle (used on game page and cart page)
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
 // button check me out homepage
 $('#fB').mouseenter(function () {
   $("div.icon").append("<span class='hideMe' id='socialF'><a href='http://www.facebook.com'>Facebook</a></span>");
